@@ -31,7 +31,7 @@ export default function WaitlistSection() {
                 <span className="sofia-sans hidden lg:block text-4xl w-fit bg-primary py-2 rounded-full text-white drop-shadow-xl border-[3px] border-black px-7 mb-8">
                     🍛same dishes everyday?🍝
                 </span>
-                <p className="text-lg sofia-sans w-[85%] lg:w-[48%] mx-auto text-center mb-9">
+                <p className="text-lg sofia-sans w-[85%] lg:w-[40%] mx-auto text-center mb-9">
                     Do you crave new and exciting dishes? Look no further! Chow
                     is the perfect solution for discovering your next dish.
                 </p>

@@ -3,14 +3,14 @@ import smartphone from '../../assets/images/smartphone.png';
 export default function ImageCarousel() {
     // list of file locations for the images displayed in the header
     const listOfImages = [
-        "foodone.png",
-        "food_two.png",
-        "food_three.png",
-        "food_four.png",
-        "food_five.png",
-        "food_six.png",
-        "food_seven.png",
-        "food_eight.png",
+        "./src/assets/images/foodone.png",
+        "./src/assets/images/food_two.png",
+        "./src/assets/images/food_three.png",
+        "./src/assets/images/food_four.png",
+        "./src/assets/images/food_five.png",
+        "./src/assets/images/food_six.png",
+        "./src/assets/images/food_seven.png",
+        "./src/assets/images/food_eight.png",
     ];
 
     return (
@@ -18,7 +18,7 @@ export default function ImageCarousel() {
             <ul className="flex items-center w-full animate-infinite-scroll">
                 {listOfImages.map((image, index) => (
                     <img
-                        src={`./src/assets/images/${image}`}
+                        src={image}
                         className="w-[8rem] lg:w-[12rem]"
                         alt={`Food ${index + 1}`}
                         key={index}
@@ -28,7 +28,7 @@ export default function ImageCarousel() {
                 {listOfImages.map((src, index) => (
                     <img
                         key={`duplicate-${index}`}
-                        src={`./src/assets/images/${src}`}
+                        src={src}
                         className="w-[8rem] lg:w-[12rem]"
                         alt={`Image ${index + 1}`}
                     />
