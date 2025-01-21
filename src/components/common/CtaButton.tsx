@@ -1,6 +1,4 @@
-interface ButtonProps {
-    text: string
-}
+import { ButtonProps } from "../../types/componentTypes";
 
 export default function CtaButton({ text }: ButtonProps) {
     return (

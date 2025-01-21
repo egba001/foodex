@@ -4,7 +4,12 @@
 
 @font-face {
     font-family: "Pangram";
-    src: url("fonts/Pangram-Bold.otf"), format("otf");
+    src: url("fonts/Pangram-Medium.otf"), format("otf");
+}
+
+@font-face {
+    font-family: "Pangram_Regular";
+    src: url("fonts/Pangram-Regular.otf"), format("otf");
 }
 
 .sofia-sans {

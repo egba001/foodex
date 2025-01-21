@@ -6,7 +6,7 @@ import ig from "../../assets/svgs/instagram.svg"
 
 export default function SideNavigation() {
     return (
-        <aside className="w-[25%] px-8 sofia-sans">
+        <aside className="w-[22%] hidden lg:block px-8 sofia-sans">
             <img src={logo} alt="Chow Africa Logo" />
 
             <nav className="mt-10 mb-5">

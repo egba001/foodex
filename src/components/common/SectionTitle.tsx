@@ -7,8 +7,8 @@ export default function SectionTitle({ title, color }: SectionTitleProps) {
     return (
         <h2 className="flex items-center uppercase gap-3 pangram">
             <svg
-                width="25"
-                height="24"
+                width="23"
+                height="22"
                 viewBox="0 0 25 24"
                 aria-hidden="true"
                 fill="none"
@@ -19,11 +19,15 @@ export default function SectionTitle({ title, color }: SectionTitleProps) {
                     fill={color}
                 />
             </svg>
-            <span className={`uppercase text-${color} font-pangram text-[15px]`}>{title}</span>
+            <span
+                className={`uppercase text-${color} font-pangram_reg text-xs lg:text-[15px]`}
+            >
+                {title}
+            </span>
 
             <svg
-                width="25"
-                height="24"
+                width="23"
+                height="22"
                 viewBox="0 0 25 24"
                 aria-hidden="true"
                 fill="none"

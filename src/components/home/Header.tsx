@@ -23,7 +23,7 @@ export default function Header() {
                 
             );
             setAnimationKey((prevKey) => prevKey + 1);
-        }, 8000);
+        }, 6000);
 
         return () => clearInterval(timer);
     }, []);
@@ -45,19 +45,20 @@ export default function Header() {
                     color="white"
                 />
 
-                <h1 className="text-6xl mb-5 mx-auto transition-transform duration-300 ease-in-out inline-flex">
-                    <span className="font-pangram text-8xl">Find chow,</span>
+                <h1 className="text-4xl flex-wrap px-2 lg:px-0 text-center justify-center lg:text-6xl mb-5 mx-auto transition-transform duration-300 ease-in-out inline-flex items-center">
+                    <span className="font-pangram ">Find chow,</span>
 
                     <span
                         key={animationKey}
-                        className="inline-block courgette-regular text-8xl text-green gap-1 animate-slide-in"
+                        className="courgette-regular text-green gap-1 animate-slide-in"
                     >
                         {listOfDynamicTexts[currentTextIndex]}
                         <svg
                             aria-hidden="true"
-                            width="268"
+                            // width="268"
                             height="12"
                             viewBox="0 0 268 12"
+                            className="w-[6rem]"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -69,18 +70,18 @@ export default function Header() {
                         </svg>
                     </span>
                 </h1>
-                <p className="w-[60%] mx-auto text-center sofia-sans text-xl">
+                <p className="w-[80%] lg:w-[60%] mx-auto text-center sofia-sans text-sm lg:text-xl">
                     The patient dog eats left overs. Be the first to know when
                     we launch. Join our Waitlist 😎
                 </p>
             </div>
 
             {/* Wailtist button */}
-            <div className="justify-center flex gap-2 mb-40">
+            <div className="justify-center flex flex-col items-center lg:flex-row gap-2 mb-20 lg:mb-40">
                 <input
                     name="email"
                     placeholder="Enter your email"
-                    className="rounded-xl focus:outline-none focus:border-green transition-colors duration-100 ease-out w-[20rem] h-[3rem] pl-3 bg-white border border-[D6DAD9] sofia-sans text-dark_second"
+                    className="rounded-xl focus:outline-none focus:border-green mb-4 lg:mb-0 transition-colors duration-100 ease-out w-[85%] lg:w-[20rem] h-[3rem] pl-3 bg-white border border-[D6DAD9] sofia-sans text-dark_second"
                 />
                 <CtaButton text="Join waitlist" />
             </div>

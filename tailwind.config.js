@@ -11,6 +11,7 @@ export default {
             },
             fontFamily: {
                 pangram: ["Pangram", "sans-serif"], // Add custom font here
+                pangram_reg: ["Pangram_Regular", "sans-serif"], // Add custom font here
             },
             animation: {
                 "slide-in": "slide-in 3s ease-out", // Register the custom animation

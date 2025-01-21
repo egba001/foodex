@@ -14,12 +14,12 @@ export default function ImageCarousel() {
     ];
 
     return (
-        <div className='relative w-full'>
+        <div className="relative w-full">
             <ul className="flex items-center w-full animate-infinite-scroll">
                 {listOfImages.map((image, index) => (
                     <img
                         src={`./src/assets/images/${image}`}
-                        width={195}
+                        className="w-[8rem] lg:w-[12rem]"
                         alt={`Food ${index + 1}`}
                         key={index}
                     />
@@ -29,14 +29,17 @@ export default function ImageCarousel() {
                     <img
                         key={`duplicate-${index}`}
                         src={`./src/assets/images/${src}`}
-                        width={195}
+                        className="w-[8rem] lg:w-[12rem]"
                         alt={`Image ${index + 1}`}
-                        className="h-full"
                     />
                 ))}
             </ul>
             {/* SMartphone image */}
-            <img src={smartphone} className='absolute right-28 -top-24' width={200} alt="smartphone" />
+            <img
+                src={smartphone}
+                className="absolute right-8 lg:right-28 -top-8 lg:-top-20 w-[8rem] lg:w-44"
+                alt="smartphone"
+            />
         </div>
     );
 }
