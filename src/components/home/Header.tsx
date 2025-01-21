@@ -58,7 +58,7 @@ export default function Header() {
                             // width="268"
                             height="12"
                             viewBox="0 0 268 12"
-                            className="w-[6rem]"
+                            className="w-[6rem] lg:w-[13rem]"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
