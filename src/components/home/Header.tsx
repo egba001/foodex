@@ -33,7 +33,7 @@ export default function Header() {
             className="w-full rounded-2xl bg-dark pt-20 text-white overflow-hidden"
             style={{
                 backgroundImage:
-                    "url('/assets/images/header_background.png')",
+                    "url('/images/header_background.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",

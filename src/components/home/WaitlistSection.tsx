@@ -5,7 +5,7 @@ export default function WaitlistSection() {
         <section
             className="pt-20 mb-10"
             style={{
-                backgroundImage: "url('/assets/svgs/section_bg.svg')",
+                backgroundImage: "url('/svgs/section_bg.svg')",
                 backgroundSize: "contain",
                 backgroundPosition: "center 20%",
                 backgroundRepeat: "no-repeat",
