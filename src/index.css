@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Pangram";
+    src: url("fonts/Pangram-Bold.otf"), format("otf");
+}
+
+.sofia-sans {
+    font-family: "Sofia Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.pangram {
+    font-family: "Pangram", sans-serif;
+}
+
+.courgette-regular {
+  font-family: "Courgette", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer utilities {
+    .active-link {
+        @apply border-l-[3px] border-l-primary pl-4 transition-all ease-in duration-200;
+    }
+}
