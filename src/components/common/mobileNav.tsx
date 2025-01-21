@@ -1,4 +1,3 @@
-import hamburger from "../../assets/svgs/hamburger.svg";
 import MobileCtaButton from "./mobileCtaButton";
 
 export default function MobileNav() {
@@ -11,7 +10,7 @@ export default function MobileNav() {
                     <MobileCtaButton text="Join waitlist" />
 
                     <button>
-                        <img src={hamburger} alt="Hamburger menu" />
+                        <img src="/svgs/hamburger.svg" alt="Hamburger menu" />
                     </button>
                 </div>
             </div>
