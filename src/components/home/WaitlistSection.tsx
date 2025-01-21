@@ -1,6 +1,4 @@
 import SectionTitle from "../common/SectionTitle";
-import sectionImage from "../../assets/images/section_image.png"
-import mobileImage from "../../assets/images/mobile_waitlist.png"
 
 export default function WaitlistSection() {
     return (
@@ -37,12 +35,12 @@ export default function WaitlistSection() {
                 </p>
 
                 <img
-                    src={sectionImage}
+                    src="/images/section_image.png"
                     className="hidden lg:block"
                     alt="User odering food via chow africa app"
                 />
                 <img
-                    src={mobileImage}
+                    src="/images/mobile_waitlist.png"
                     className="lg:hidden"
                     alt="User odering food via chow africa app"
                 />

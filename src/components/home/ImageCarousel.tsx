@@ -1,16 +1,14 @@
-import smartphone from '../../assets/images/smartphone.png';
-
 export default function ImageCarousel() {
     // list of file locations for the images displayed in the header
     const listOfImages = [
-        "./src/assets/images/foodone.png",
-        "./src/assets/images/food_two.png",
-        "./src/assets/images/food_three.png",
-        "./src/assets/images/food_four.png",
-        "./src/assets/images/food_five.png",
-        "./src/assets/images/food_six.png",
-        "./src/assets/images/food_seven.png",
-        "./src/assets/images/food_eight.png",
+        "/images/foodone.png",
+        "/images/food_two.png",
+        "/images/food_three.png",
+        "/images/food_four.png",
+        "/images/food_five.png",
+        "/images/food_six.png",
+        "/images/food_seven.png",
+        "/images/food_eight.png",
     ];
 
     return (
@@ -36,7 +34,7 @@ export default function ImageCarousel() {
             </ul>
             {/* SMartphone image */}
             <img
-                src={smartphone}
+                src="/images/smartphone.png"
                 className="absolute right-8 lg:right-28 -top-8 lg:-top-20 w-[8rem] lg:w-44"
                 alt="smartphone"
             />
